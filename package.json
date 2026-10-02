@@ -1,0 +1,57 @@
+{
+  "name": "polygon-background",
+  "version": "1.1.2",
+  "description": "Beautiful, animated polygon mesh backgrounds for web apps. WebGL + WASM powered, 60fps smooth, 5 themes, mouse-interactive. Works with React, Vue, Angular, or vanilla JS.",
+  "type": "module",
+  "main": "./dist/polygon-background.js",
+  "module": "./dist/polygon-background.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/polygon-background.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "typecheck": "tsc --noEmit",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "background",
+    "polygon",
+    "canvas",
+    "animation",
+    "delaunay",
+    "triangulation",
+    "webgl",
+    "wasm",
+    "webassembly",
+    "react",
+    "vue",
+    "angular",
+    "mesh",
+    "3d",
+    "graphics"
+  ],
+  "author": "k4ugummi",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.36.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.4.11",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
